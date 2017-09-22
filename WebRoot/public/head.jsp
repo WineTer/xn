@@ -12,7 +12,7 @@
   </script>
    <div class="head1">
    <ul class="navi1">
-   <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="/xiaoneinews/register.do?flag=regUI">注册</a></li>
+   <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="register.jsp">注册</a></li>
    <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="#">设为首页</a></li>
    <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="#">加入收藏</a></li>
    <li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="anavi" href="#">帮助</a></li>

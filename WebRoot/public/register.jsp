@@ -24,7 +24,7 @@
    <!-- 注册用的表格 -->
    <div class="reg_table1">
    <span class="font6">简单一步，快速注册</span><br/>
-   <form action="/xiaoneinews/register.do?flag=regUser"  method="post">
+   <form action="register.htm"  method="get">
    <table>
    <tr>
    <td class="tab_td1">真实姓名:</td>

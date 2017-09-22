@@ -1,5 +1,8 @@
 package com.xiaonei.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,22 +10,27 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 
+
+
+
+
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import com.xiaonei.entity.User;
 import com.xiaonei.service.UserService;
 
 
-@Controller   //±êÊ¶ËüÊÇÒ»¸ö¿ØÖÆÆ÷Àà
+@Controller   //ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 @RequestMapping("/") //
 public class Controllers {
 
-	//µ÷ÓÃÒµÎñ²ãµÄ´úÂë¡£½ÓÊÕÒ³Ãæ´«¹ýÀ´µÄ²ÎÊý£¬´«²Î²¢Ìø×ªµ½½á¹ûÒ³
+	//ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½Ä´ï¿½ï¿½ë¡£ï¿½ï¿½ï¿½ï¿½Ò³ï¿½æ´«ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½Î²ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ò³
 	@Autowired
 	private UserService service;
 	
 	
-	@RequestMapping("/login")
+	@RequestMapping("public/login")
 	public ModelAndView login(HttpServletRequest request,String email, String pwd){
 		ModelAndView modelView = new ModelAndView();
 		User user = service.queryUserList(email, pwd);
@@ -36,7 +44,35 @@ public class Controllers {
 		
 		return modelView;
 	}
-	@RequestMapping("/exit")
+	
+	@RequestMapping("public/register")
+	public 	ModelAndView addUser(HttpServletRequest request,HttpServletResponse response,
+			String name,String email,String pwd,String level,String loginDate,
+			String sex,String visited,String photo){
+			
+		service.addUsers( name, email, pwd, level, loginDate,  sex, visited,photo);
+		ModelAndView m=new ModelAndView("/self/homePage.jsp");
+	
+		return m;
+		
+		
+		
+		}
+	@RequestMapping("public/AddBlog")
+	public 	ModelAndView addBlog(HttpServletRequest request,HttpServletResponse response,
+			String name,String email,String pwd,String level,String loginDate,
+			String sex,String visited,String photo){
+			
+		service.addUsers( name, email, pwd, level, loginDate,  sex, visited,photo);
+		ModelAndView m=new ModelAndView("/self/homePage.jsp");
+	
+		return m;
+		
+		
+		
+		}
+	
+	@RequestMapping("public/exit")
 	public ModelAndView exit(HttpServletRequest request){
 		ModelAndView modelView = new ModelAndView();
 		request.getSession().removeAttribute("user");

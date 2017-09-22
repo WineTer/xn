@@ -4,6 +4,12 @@
     <select id="queryUserList" parameterType="com.xiaonei.entity.User" resultType="com.xiaonei.entity.User">
         select * from users where email=#{email} and pwd=#{pwd}
     </select>
+    <insert id="addUser" parameterType="com.xiaonei.entity.User">
+    	insert into users (name,email,pwd,photo,sex,visited,loginDate,Level) values (#{name},#{email},#{pwd},#{photo},#{sex},#{visited},#{loginDate},#{Level})
+    </insert>
+        <insert id="addblog" parameterType="com.xiaonei.entity.bolg">
+    	insert into blog (blogName,userId,descript,creTime,updTime) values (#{},#{},#{},#{},#{},#{},#{},#{})
+    </insert>
                                  
 
 </mapper>

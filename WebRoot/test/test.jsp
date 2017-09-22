@@ -6,6 +6,6 @@
   </head>
   <body>
     <h1>显示国家信息</h1>
-    <a href="/xiaoneinew/test.do?flag=test">测试一下</a>
+    <a href="/xiaoneinew/test.htm">测试一下</a>
   </body>
 </html>

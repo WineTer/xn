@@ -109,7 +109,7 @@ a.feed:active {
 						<td onMouseOver="chgTblusers(this)"
 							onMouseOut="chgTblusers2(this)" id="editphoto">
 							&nbsp;
-							<a href="/xiaoneinews/profile.do?flag=uploadPhotoUI" class="xh" id="editphotoa">更改我的头像</a>
+							<a href="/xiaoneinews/profile.htm" class="xh" id="editphotoa">更改我的头像</a>
 						</td>
 					</tr>
 					<tr>
@@ -158,9 +158,7 @@ a.feed:active {
 					</tr>
 				</table>
 
-				<div class="allkinds">
-					<img src="/xiaoneinews/images/front/profileleft.jpg" />
-				</div>
+				
 			</div>
 			<!-- 各种信息 -->
 			<div class="profile">

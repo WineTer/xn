@@ -17,15 +17,15 @@ function changeBG2(o){
 
 		<div class="head">
 			<ul class="home_navi">
-			<li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="top" href="/xiaoneinew/login.do?flag=logout">首页</a></li>
-			<li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="top" href="/xiaoneinew/profile.do?flag=goHomePageUI">个人主页</a></li>
+			<li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="top" href="/xiaoneinew/login.jsp">首页</a></li>
+			<li onmouseover="changeBG(this)" onmouseout="changeBG2(this)"><a class="top" href="/xiaoneinew/profile.htm">个人主页</a></li>
 			<li>搜索</li>
 			<li style="width: 170px;"><input type="text" /><img src="/xiaoneinews/images/front/sou.jpg" /></li>
 			</ul>
 			
 			<ul class="navi">
 				<li onmouseover="changeBG(this)" onmouseout="changeBG2(this)">
-					<a class="anavi" href="#">账号123</a>
+					<a class="anavi" href="#">账号</a>
 				</li>
 				<li onmouseover="changeBG(this)" onmouseout="changeBG2(this)">
 					<a class="anavi" href="#">隐私</a>
